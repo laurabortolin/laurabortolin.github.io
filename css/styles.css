@@ -1,0 +1,99 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  background: url("../images/lv_20.jpg") no-repeat #F8F9FA center right;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 44px #e4e4e4;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  display: inline-block;
+}
+header .navbar .navbar-nav .nav-item:after {
+  content: "●";
+  margin-right: 0.5em;
+}
+header .navbar .navbar-nav .nav-item:last-child:after {
+  content: "";
+}
+header .logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 580px) {
+  header {
+    background-image: none;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+  }
+  header .navbar .navbar-nav .nav-item:after {
+    content: "";
+  }
+}
+h1 {
+  font-size: 24px;
+  color: #004a99;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+body .container {
+  margin-top: 125px;
+  margin-bottom: 70px;
+}
+
+.btn-primary {
+  background-color: #d2e8ff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.btn-primary:hover {
+  background-color: #9fceff;
+}
+.btn-primary:focus {
+  outline: none;
+}
+
+.consultas {
+  max-width: 500px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 580px) {
+  .consultas {
+    max-width: 100%;
+  }
+}
+.image-gallery {
+  max-width: 700px;
+  margin: 2em auto;
+}
+
+footer {
+  width: 100%;
+  background-color: #F8F9FA;
+  position: fixed;
+  bottom: 0;
+}
+footer p {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=styles.css.map */
